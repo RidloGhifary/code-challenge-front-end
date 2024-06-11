@@ -13,8 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <Navbar />
-        {children}
+        <main className="container relative max-w-7xl">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );

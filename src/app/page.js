@@ -1,3 +1,5 @@
+import Booking from "@/components/Booking";
+import CompanyOverview from "@/components/CompanyOverview";
 import SectionTitle from "@/components/SectionTitle";
 import ValuesCard from "@/components/ValuesCard";
 import { ChevronRight } from "lucide-react";
@@ -6,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="container relative max-w-7xl">
+    <>
       <section className="p-4 grid gap-1 lg:grid-cols-2 py-14">
         <div className="space-y-4">
           <span className="text-base font-semibold md:text-lg">
@@ -84,6 +86,12 @@ export default function Home() {
           />
         </div>
       </section>
-    </main>
+
+      {/* COMPANY OVERVIEW */}
+      <CompanyOverview />
+
+      {/* BOOKING SECTION */}
+      <Booking />
+    </>
   );
 }

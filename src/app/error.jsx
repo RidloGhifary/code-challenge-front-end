@@ -1,6 +1,12 @@
 "use client";
 
-export default function Error({ reset }) {
+import { useEffect } from "react";
+
+export default function Error({ error, reset }) {
+  useEffect(() => {
+    console.error(error);
+  }, [error]);
+
   return (
     <section className="mx-auto h-dvh max-w-screen-xl px-4 py-8 lg:px-6 lg:py-16">
       <div className="mx-auto max-w-screen-sm text-center">

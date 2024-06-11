@@ -1,3 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronRight } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import Banner from "@/components/Banner";
 import Booking from "@/components/Booking";
 import CarsModel from "@/components/CarsModel";
@@ -6,10 +10,7 @@ import ReasonCard from "@/components/ReasonCard";
 import SectionTitle from "@/components/SectionTitle";
 import Testimonial from "@/components/Testimonial";
 import ValuesCard from "@/components/ValuesCard";
-import { ChevronRight } from "lucide-react";
-import { CheckCircle } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
+import Accordion from "@/components/Accordion/Accordion";
 
 export default function Home() {
   return (
@@ -166,6 +167,24 @@ export default function Home() {
 
       {/* TESTIMONIAL SECTION */}
       <Testimonial />
+
+      {/* FAQ SECTION */}
+      <section className="relative p-4 py-14">
+        <SectionTitle
+          subTitle="FAQ"
+          title="Frequently Asked Questions"
+          description="Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries."
+        />
+        <Image
+          src="/faq-section-car.webp"
+          alt="faq-car"
+          loading="lazy"
+          width={200}
+          height={200}
+          className="aspect-square absolute bottom-0 left-0 -z-10"
+        />
+        <Accordion />
+      </section>
     </>
   );
 }

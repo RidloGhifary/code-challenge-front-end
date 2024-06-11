@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function CompanyOverview() {
+export default function Page() {
   return (
     <section className="p-4 py-14">
       <div className="grid items-center justify-center gap-6 md:grid-cols-2 md:gap-0">

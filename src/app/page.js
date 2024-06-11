@@ -5,7 +5,6 @@ import { CheckCircle } from "lucide-react";
 import Banner from "@/components/Banner";
 import Booking from "@/components/Booking";
 import CarsModel from "@/components/CarsModel";
-import CompanyOverview from "@/components/CompanyOverview";
 import ReasonCard from "@/components/ReasonCard";
 import SectionTitle from "@/components/SectionTitle";
 import Testimonial from "@/components/Testimonial";
@@ -92,9 +91,6 @@ export default function Home() {
           />
         </div>
       </section>
-
-      {/* COMPANY OVERVIEW */}
-      <CompanyOverview />
 
       {/* BOOKING SECTION */}
       <Booking />

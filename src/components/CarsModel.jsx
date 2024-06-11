@@ -39,7 +39,6 @@ export default function CarsModel() {
             className="aspect-auto object-contain w-full"
             onLoad={() => {
               <p>Loading...</p>;
-              console.log("loading");
             }}
           />
         </div>

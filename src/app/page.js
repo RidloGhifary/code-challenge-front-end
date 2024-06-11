@@ -4,6 +4,7 @@ import CarsModel from "@/components/CarsModel";
 import CompanyOverview from "@/components/CompanyOverview";
 import ReasonCard from "@/components/ReasonCard";
 import SectionTitle from "@/components/SectionTitle";
+import Testimonial from "@/components/Testimonial";
 import ValuesCard from "@/components/ValuesCard";
 import { ChevronRight } from "lucide-react";
 import { CheckCircle } from "lucide-react";
@@ -162,6 +163,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* TESTIMONIAL SECTION */}
+      <Testimonial />
     </>
   );
 }

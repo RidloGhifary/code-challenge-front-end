@@ -27,7 +27,7 @@ export default async function Testimonial() {
   const entries = await getEntries();
 
   return (
-    <section className="-mt-16 space-y-12 bg-backgroundLightGray p-4 py-16 md:px-14">
+    <section className="-mt-16 space-y-12 bg-backgroundLightGray p-4 py-14">
       <SectionTitle
         title="Client's Testimonials"
         subTitle="Reviewed by People"

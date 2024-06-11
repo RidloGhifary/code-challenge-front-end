@@ -19,7 +19,7 @@ async function getEntries() {
 
     return sanitizedEntries;
   } catch (err) {
-    console.log(err);
+    throw new Error(err.message);
   }
 }
 

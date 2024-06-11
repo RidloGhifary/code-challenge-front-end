@@ -1,3 +1,5 @@
+"use client";
+
 import { Mail } from "lucide-react";
 import { PhoneCall } from "lucide-react";
 import { Form, Field, ErrorMessage, Formik } from "formik";
@@ -10,7 +12,7 @@ const SubscriptionSchema = Yup.object().shape({
 
 export default function Footer() {
   return (
-    <footer className="p-4 py-16 md:px-14">
+    <footer className="p-4 py-14">
       <div className="mx-auto grid max-w-[1240px] gap-16 sm:grid-cols-2 md:grid-cols-4">
         <article className="md:col-span-2">
           <h1 className="text-4xl font-semibold text-mainColor">Car Rental</h1>

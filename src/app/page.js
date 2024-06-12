@@ -184,7 +184,7 @@ export default function Home() {
           loading="lazy"
           width={200}
           height={200}
-          className="aspect-square absolute bottom-0 left-0 -z-10"
+          className="aspect-auto absolute bottom-0 left-0 -z-10"
         />
         <Accordion />
       </section>

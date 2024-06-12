@@ -20,7 +20,8 @@ export default function NotFound() {
         </p>
         <button
           onClick={() => router.back()}
-          className="my-4 inline-flex select-none rounded-lg bg-backgroundLightGray px-5 py-2.5 text-center text-sm font-medium">
+          className="my-4 inline-flex select-none rounded-lg bg-backgroundLightGray px-5 py-2.5 text-center text-sm font-medium"
+        >
           Back to Previous Url
         </button>
       </div>

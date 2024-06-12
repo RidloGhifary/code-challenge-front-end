@@ -13,13 +13,14 @@ import Accordion from "@/components/Accordion/Accordion";
 export default function Home() {
   return (
     <>
-      <section className="p-4 grid gap-1 lg:grid-cols-2 py-14">
+      <section className="grid gap-1 p-4 py-14 lg:grid-cols-2">
         <div className="space-y-4">
           <span className="text-base font-semibold md:text-lg">
             Plan your trip now
           </span>
           <h1 className="text-5xl font-bold sm:text-6xl md:text-7xl">
-            Save big with our <br />
+            Save big with
+            <br />
             <b className="text-mainColor">Car rental</b>
           </h1>
           <p className="text-base font-medium text-secondaryTextGray">
@@ -31,13 +32,13 @@ export default function Home() {
               Book
               <CheckCircle size={25} />
             </button>
-            <button className="flex items-center gap-3 border border-black bg-black px-6 py-4 font-bold text-white transition hover:bg-white hover:text-black">
+            <button className="flex items-center gap-3 border border-black bg-black px-4 py-2 font-bold text-white transition hover:bg-white hover:text-black md:px-6 md:py-4">
               Learn more
               <ChevronRight size={25} />
             </button>
           </div>
         </div>
-        <div className="relative hidden mx-auto select-none lg:block">
+        <div className="relative mx-auto hidden select-none lg:block">
           <Image
             src="/header/main-car.webp"
             alt="car"
@@ -111,10 +112,10 @@ export default function Home() {
         <Image
           src="/three-cars.webp"
           alt="three-cars"
-          width={1000}
-          height={1000}
+          width={800}
+          height={800}
           loading="lazy"
-          className="mx-auto aspect-auto object-contain w-[70%]"
+          className="mx-auto aspect-auto object-contain"
         />
 
         <div className="mx-auto mb-28 grid max-w-[1240px] gap-10 p-4 md:grid-cols-2">
@@ -136,7 +137,8 @@ export default function Home() {
 
             <Link
               href="/about"
-              className="hover:shadow-orange mt-3 flex w-[165px] items-center gap-3 rounded-md bg-mainColor px-4 py-2 text-center font-semibold text-white transition hover:scale-105">
+              className="hover:shadow-orange mt-3 flex w-[165px] items-center gap-3 rounded-md bg-mainColor px-4 py-2 text-center font-semibold text-white transition hover:scale-105"
+            >
               <button>More Detail</button>
               <ChevronRight size={28} color="#ffffff" />
             </Link>
@@ -184,7 +186,7 @@ export default function Home() {
           loading="lazy"
           width={200}
           height={200}
-          className="aspect-auto absolute bottom-0 left-0 -z-10"
+          className="absolute bottom-0 left-0 -z-10 aspect-auto"
         />
         <Accordion />
       </section>

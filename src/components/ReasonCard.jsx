@@ -9,6 +9,7 @@ export default function ReasonCard({ title, description, imagePath }) {
         width={150}
         height={150}
         loading="lazy"
+        className="aspect-square w-24 h-24 object-contain"
       />
       <div className="flex flex-col gap-2">
         <p className="text-2xl font-bold">{title}</p>

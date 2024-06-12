@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import AccordionItem from "../AccordionItem";
+import AccordionItem from "./AccordionItem";
 import faqDatas from "@/data/faq.json";
 
 export default function Accordion() {

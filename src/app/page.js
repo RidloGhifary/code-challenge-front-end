@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { CheckCircle } from "lucide-react";
-import Banner from "@/components/Banner";
 import Booking from "@/components/Booking";
 import CarsModel from "@/components/CarsModel";
 import ReasonCard from "@/components/ReasonCard";
@@ -99,7 +98,15 @@ export default function Home() {
       <CarsModel />
 
       {/* WHY CHOOSE US */}
-      <Banner />
+      <div className="w-full space-y-3 bg-black p-4 text-center text-mainColor">
+        <h1 className="text-4xl font-bold text-white md:text-6xl">
+          Save big with our cheap car rental!
+        </h1>
+        <p className="text-sm md:text-base">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+          repellendus!
+        </p>
+      </div>
       <section className="p-4 py-14">
         <Image
           src="/three-cars.webp"

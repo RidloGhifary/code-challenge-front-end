@@ -43,7 +43,7 @@ export default function Home() {
             alt="car"
             width={500}
             height={500}
-            loading="lazy"
+            priority
             className="aspect-auto w-full"
           />
           <Image

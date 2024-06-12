@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-4 py-14 md:px-14">
+    <section className="flex min-h-full flex-1 flex-col justify-center px-4 py-14 md:px-14">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
         <h2 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           Register your account
@@ -85,6 +85,6 @@ export default function Page() {
           </Link>
         </p>
       </div>
-    </div>
+    </section>
   );
 }

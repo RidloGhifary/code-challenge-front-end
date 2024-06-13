@@ -4,7 +4,7 @@ import axios from "axios";
 async function getDataTeams() {
   try {
     const response = await axios.get(
-      "https://randomuser.me/api/?results=10&nat=gb"
+      "https://randomuser.me/api/?results=10&nat=gb",
     );
     return response.data.results;
   } catch (error) {
@@ -23,11 +23,12 @@ export default async function Teams() {
         description="DriveEase Rentals is led by a team of dedicated professionals with a passion for excellence and customer service."
       />
 
-      <div className="mx-auto mt-12 grid grid-cols-2 content-center justify-items-center gap-4 gap-y-6 sm:grid-cols-3 md:grid-cols-5">
+      <div className="mx-auto my-12 grid grid-cols-2 content-center justify-items-center gap-4 gap-y-6 sm:grid-cols-3 md:grid-cols-5">
         {teamMembers.map((teamMember) => (
           <div
             key={teamMember.login.uuid}
-            className="mx-auto flex min-h-[250px] w-full cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg p-2 transition-all hover:scale-105 hover:bg-white hover:shadow-lg">
+            className="mx-auto flex min-h-[250px] w-full cursor-pointer flex-col items-center justify-center space-y-2 rounded-lg p-2 transition-all hover:scale-105 hover:bg-white hover:shadow-lg"
+          >
             <picture>
               <source
                 srcSet={teamMember.picture.large}

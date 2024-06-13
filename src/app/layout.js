@@ -1,8 +1,5 @@
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Download from "@/components/Download";
-import Footer from "@/components/Footer";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -15,12 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={openSans.className}>
-        <main className="container relative max-w-7xl">
-          <Navbar />
-          {children}
-          <Download />
-          <Footer />
-        </main>
+        <main className="container relative max-w-7xl">{children}</main>
       </body>
     </html>
   );
